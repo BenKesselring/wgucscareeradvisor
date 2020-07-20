@@ -9,7 +9,7 @@
         If you haven't given me your name yet, please type "may name is" followed by your name - otherwise, click the "Get Started" button below.
         <button>
             <text>Get Started</text>
-            <portback>getstarted</portback>
+            <postback>getstarted</postback>
         </button>
     </template>
 </category>

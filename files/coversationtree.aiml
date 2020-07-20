@@ -85,10 +85,10 @@
         Are you more interested in networking or security?
         <button>
             <text>I find computer networks fascinating.</text>
-            <postback>careernetworkengineer</postback>
+            <postback>careernetworking</postback>
         </button>
         <button>
-            <text>Protecting computers sounds interesting.</text>
+            <text>Protecting computers and networks sounds interesting.</text>
             <postback>careercybersec</postback>
         </button>
     </template>
