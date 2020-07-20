@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <aiml version="2.0">
 
-
+<category>
+    <pattern>*</pattern>
+    <template>
+        Whoops, looks like you typed something I'm too dumb to recognize!<br/>
+        As I may or may not have mentioned earlier, I'm a bit dumb, so most of my questions have buttons to avoid me misreading your responses.<br/>
+        If you haven't given me your name yet, please type "may name is" followed by your name - otherwise, click the "Get Started" button below.
+        <button>
+            <text>Get Started</text>
+            <portback>getstarted</portback>
+        </button>
+    </template>
+</category>
 
 </aiml>
