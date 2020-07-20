@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern>CAREERDEVOPS</pattern>
+    <template>
+        It looks like a career as a <a href="https://www.payscale.com/research/US/Job=Development_Operations_(DevOps)_Engineer/Salary">DevOps Engineer</a> may be in your future!<br/>
+        <srai>exitstate</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>CAREERSOFTDEV</pattern>
+    <template>
+        It looks like a career as a <a href="https://www.payscale.com/research/US/Job=Software_Developer/Salary">Software Developer</a> or a <a href="https://www.payscale.com/research/US/Job=Software_Engineer/Salary">Software Engineer</a> may be in your future!<br/>
+        <srai>exitstate</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>CAREERWEBDEV</pattern>
+    <template>
+        It looks like a career as a <a href="https://www.payscale.com/research/US/Job=Web_Developer/Salary">Web Developer</a> may be in your future!<br/>
+        <srai>exitstate</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>CAREERGAMEDEV</pattern>
+    <template>
+        It looks like a career as a <a href="https://www.payscale.com/research/US/Job=Video_Game_Developer/Salary">Video Game Developer</a> may be in your future!<br/>
+        <srai>exitstate</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>CAREERNETWORKING</pattern>
+    <template>
+        It looks like a career as a <a href="https://www.payscale.com/research/US/Job=Network_Engineer%2C_IT/Salary">Network Engineer</a> or a <a href="https://www.payscale.com/research/US/Job=Systems_Engineer_(Computer_Networking_%2F_IT)/Salary">Systems Engineer</a> may be in your future!<br/>
+        <srai>exitstate</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>CAREERCYBERSEC</pattern>
+    <template>
+        It looks like a career as a <a href="https://www.payscale.com/research/US/Job=Security_Analyst/Salary">Security Analyst</a> or a <a href="https://www.payscale.com/research/US/Job=Cyber_Security_Engineer/Salary">Cyber Security Engineer</a> may be in your future!<br/>
+        <srai>exitstate</srai>
+    </template>
+</category>
+
+</aiml>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+  <pattern>HELLO</pattern>
+  <template>
+      Hello, and welcome to WGU CS Career Advisement! <br/>
+      Before we get started, what is your name?<br/>
+      (Please start with "My name is")
+  </template>
+</category>
+
+<category>
+    <pattern>MY NAME IS *</pattern>
+    <template>
+        Pleased to make your acquaintance, <set name="name"><star/></set>.<br/>
+        To start off with, I should let you know that I'm a bit dumb, so all of my questions have buttons to avoid me misreading your responses.<br/>
+        Would you like to get started with the automated career guidance process?
+        <button>
+            <text>Lets get this show on the road!</text>
+            <postback>getstarted</postback>
+        </button>
+        <button>
+            <text>I'd rather not use this service right now.</text>
+            <postback>exitstate</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>GETSTARTED</pattern>
+        <template>
+            Great, lets get to our first question: Do you enjoy coding?
+            <button>
+                <text>Yes, I love coding!</text>
+                <postback>yescoding</postback>
+            </button>
+            <button>
+                <text>No, I'm not a fan of coding.</text>
+                <postback>nocoding</postback>
+            </button>
+        </template>
+</category>
+
+<category>
+    <pattern>YESCODING</pattern>
+    <template>
+        Looks like we're off to a good start!<br/>
+        Now, are you more of a pure coder, or would you like to branch out into server maintenance and administration to mix things up?
+        <button>
+            <text>I get bored with code sometimes, lets mix it up.</text>
+            <postback>careerdevops</postback>
+        </button>
+        <button>
+            <text>Code is life, forget that other junk!</text>
+            <postback>purecode</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>PURECODE</pattern>
+    <template>
+        Alright, so you're more of a pure coder, then!<br/>
+        In that case, do you just like softwaare development in general, or are you interested in one of these specific types of software?
+        <button>
+            <text>I just like to make things with code, and I want to make a wide range of things.</text>
+            <postback>careersoftdev</postback>
+        </button>
+        <button>
+            <text>I'd love to make games!</text>
+            <postback>careergamedev</postback>
+        </button>
+        <button>
+            <text>The web is the future, I want my software to live there!</text>
+            <postback>careerwebdev</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>NOCODING</pattern>
+    <template>
+        Looks like we're off to a good start!<br/>
+        Are you more interested in networking or security?
+        <button>
+            <text>I find computer networks fascinating.</text>
+            <postback>careernetworkengineer</postback>
+        </button>
+        <button>
+            <text>Protecting computers sounds interesting.</text>
+            <postback>careercybersec</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>SEE MORE OPTIONS</pattern>
+    <template><srai>getstarted</srai></template>
+</category>
+
+<category>
+    <pattern>EXITSTATE</pattern>
+    <template>
+        If you would like to try using this service again, you may start over by typing "see more options" or clicking the button below.<br/>
+        Otherwise, have a great day, <get name="name"/>!
+        <button>
+            <text>See more options.</text>
+            <postback>getstarted</postback>
+        </button>
+    </template>
+</category>
+
+</aiml>
